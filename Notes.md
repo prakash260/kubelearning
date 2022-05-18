@@ -1,3 +1,13 @@
+### Pods:
+- kubectl run nginx --image=nginx
+- kubectl get pods
+- kubectl get nodes
+- kubectl describe pod nginx
+- kubectl get pods -o wide
+- kubectl delete pod nginx
+- kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+- kubectl edit pod <pod-name>
+
 ### Creating Replication Controller
 - kubectl create -f rc-definition.yml
 - kubectl get replicationcontroller
@@ -32,4 +42,5 @@
 
 minikube service result-service --url
 
-
+### Ref:
+https://kubernetes.io/docs/concepts/
