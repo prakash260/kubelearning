@@ -1,0 +1,17 @@
+minikube start --driver=virtualbox
+minikube status
+kubectl get nodes
+kubectl get deployments
+kubectl get deployments
+minikube kubectl -- create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4
+kubectl get deployments
+minikube kubectl -- expose deployment hello-minikube --type=NodePort --port=8080
+kubectl get services
+minikube service hello-minikube --url
+kubectl get deployments
+kubectl get services
+kubetctl delete services hello-minikube
+kubectl delete services hello-minikube
+kubectl get deployments
+kubectl delete deployment hello-minikube
+kubectl get pods
